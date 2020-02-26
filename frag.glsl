@@ -25,7 +25,7 @@ void main() {
         colors = texture( cat_texture, barC);
         Normal.xy = position * 2.0 - vec2(1.0);
         float mag = dot( Normal.xy, Normal.xy );
-        Normal.z = sqrt(1.0-mag);
+        Normal.z= 1.f-2*(abs(position.x-0.5));
         if (pass > 1.0) {
             if (mag > 1.0) {
                 discard;
