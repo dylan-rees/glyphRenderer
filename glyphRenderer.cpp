@@ -199,19 +199,19 @@ int main() {
 	randomArray(varA, &varA_vbo,2);
 	GLuint varB_vbo = 0;
 	glGenBuffers(1, &varB_vbo);
-	randomArray(varA, &varB_vbo,3);
+	randomArray(varB, &varB_vbo,3);
 	GLuint varC_vbo = 0;
 	glGenBuffers(1, &varC_vbo);
-	randomArray(varA, &varC_vbo,4);
+	randomArray(varC, &varC_vbo,4);
 	GLuint varD_vbo = 0;
 	glGenBuffers(1, &varD_vbo);
-	randomArray(varA, &varD_vbo,5);
+	randomArray(varD, &varD_vbo,5);
 	GLuint varE_vbo = 0;
 	glGenBuffers(1, &varE_vbo);
-	randomArray(varA, &varE_vbo,6);
+	randomArray(varE, &varE_vbo,6);
 	GLuint varF_vbo = 0;
 	glGenBuffers(1, &varF_vbo);
-	randomArray(varA, &varF_vbo,7);
+	randomArray(varF, &varF_vbo,7);
 
 	draw(window, vao);
 	glfwTerminate();
