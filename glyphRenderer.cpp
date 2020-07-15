@@ -147,6 +147,10 @@ void draw(GLFWwindow* window, GLuint vao) {
 			reloadShader( &shader_program, "vert.glsl",
 				      "frag.glsl", "geomAlt.glsl" );
 		}
+		if ( glfwGetKey( window, GLFW_KEY_S ) ) {
+			reloadShader( &shader_program, "vert.glsl",
+				      "frag.glsl", "geomStar.glsl" );
+		}
 		if(glfwGetKey(window, GLFW_KEY_ESCAPE)) {
 			glfwSetWindowShouldClose(window, 1);
 		}
